@@ -25,11 +25,11 @@ namespace TrainingTen.Entities
 
             if(AnualIncome  > 20000.00)
             {
-                taxes = (AnualIncome * 0.25) * (HealthExpenditures * 0.50);
+                taxes = (AnualIncome * 0.25) - (HealthExpenditures * 0.50);
             }
             else
             {
-                taxes = (AnualIncome * 0.15) * (HealthExpenditures * 0.50);
+                taxes = (AnualIncome * 0.15) - (HealthExpenditures * 0.50);
             }
             return taxes;
         }
